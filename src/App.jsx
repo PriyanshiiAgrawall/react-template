@@ -6,6 +6,7 @@ import Contact from './components/Contact'
 import Services from './components/Services'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import TeachableMachineComponent from './components/TeachableMachineComponent'
+import Maps from './components/map'
 
 
 function App() {
@@ -15,12 +16,12 @@ function App() {
       <div>
         <BrowserRouter>
           <Routes>
-            <Route path="/" element={<Navbar/>}>
-              <Route index element={<Home/>}/>
-              <Route path='/AboutUs' element={<AboutUs/>}/>
-              <Route path='/Services' element={<Services/>}/>
-              <Route path='/Contact' element={<Contact/>}/>
-              <Route path='/tmcomp' element={<TeachableMachineComponent/>}/>
+            <Route path="/" element={<Navbar />}>
+              <Route index element={<Home />} />
+              <Route path='/AboutUs' element={<AboutUs />} />
+              <Route path='/Services' element={<Services />} />
+              <Route path='/Maps' element={<Maps />} />
+              <Route path='/tmcomp' element={<TeachableMachineComponent />} />
             </Route>
           </Routes>
         </BrowserRouter>
